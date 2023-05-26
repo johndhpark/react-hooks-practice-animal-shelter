@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "json-server": "^0.16.3",
+    "jest-environment-jsdom-sixteen": "^2.0.0",
+    "json-server": "^0.17.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^2.1.3",
     "semantic-ui-css": "1.11",
     "whatwg-fetch": "^3.6.2"
   },
@@ -14,7 +15,7 @@
     "start": "react-scripts start",
     "server": "json-server --watch db.json -p 3001",
     "build": "react-scripts build",
-    "test": "echo \".results.json\" && react-scripts test --reporters=@learn-co-curriculum/jest-learn-reporter --reporters=default --watchAll",
+    "test": "echo \".results.json\" && react-scripts test --reporters=@learn-co-curriculum/jest-learn-reporter --reporters=default --watchAll --env=jest-environment-jsdom-sixteen",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,7 +41,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "mocha": "^8.2.1",
+    "mocha": "^10.2.0",
     "msw": "^0.24.1"
   }
 }
